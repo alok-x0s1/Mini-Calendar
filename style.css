@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 html,
@@ -19,6 +19,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 21px;
   padding: 21px;
   background: linear-gradient(#bde08e, #ffafcc);
 }
@@ -30,7 +32,7 @@ main {
   height: 140px;
   background-color: #f0f0f0;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   border: 1px solid #ccc;
 }
@@ -77,4 +79,21 @@ main {
   50% {
     transform: translateY(-5px);
   }
+}
+
+.clock {
+  width: 240px;
+  height: 60px;
+  background-color: #bde08e;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.clock p {
+  font-size: 38px;
+  line-height: 36px;
 }
