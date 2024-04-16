@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px;
+  background: linear-gradient(#bde08e, #ffafcc);
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 140px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.calendar:hover {
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+.date-day,
+.year-month {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.day,
+.month {
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.year {
+  font-size: 28px;
+}
+
+.date {
+  font-size: 72px;
+  line-height: 52px;
+}
+
+.year-month {
+  background-color: #bde08e;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
